@@ -2,17 +2,106 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yusuke Iwasaki</title>
-    <link rel="stylesheet" href="profile.css" />
+    <!-- <link rel="stylesheet" href="profile.css" /> -->
+    <!-- Getting the Bootstrap CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Getting jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Getting the Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="http://tlsmooth89.com/favicon.ico" />
     <link rel="icon" href="http://tlsmooth89.com/favicon.ico" />
+    <style>
+       body {
+            /* font-family: sans-serif; */
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        header {
+            background-image: url("heianshrine.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* padding-bottom: 100px; */
+        }
+
+        #logo {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        #logo img {
+            max-width: 120px;
+            border: 5px solid #fff;
+            border-radius: 100%;
+        }
+
+        #logo h1 {
+            letter-spacing: 0.05em;
+            color: #fff;
+            text-shadow: 1px 1px 0px #000;
+        }
+        
+        nav {
+            margin: 0 0 30px 0;
+            padding: 10px 0;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        nav ul {
+            margin: 0 10px;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            padding: 15px 10px;    
+            color: #999;
+            font-weight: bold;
+        }
+
+        nav ul li a.selected {
+            color: #222;
+        }
+        
+        .container {
+            max-width: 800px;    
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .table-responsive img {
+            max-width: 80px;
+            border-radius: 10%;
+        }
+
+        footer {
+            background-color: #ddd;
+            text-align: center;
+        }
+        
+        .copyright {
+            padding: 20px 0;
+            font-size: 93%;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" class="selected">Profile</a></li>
-                <li>#</li>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="portfolio.html"  class="selected">Portfolio</a></li>
             </ul>
         </nav>
         <div id="logo">
@@ -21,33 +110,66 @@
         </div>
     </header>
     <div class="container">
-        <section>
-            <!-- <h2>About</h2> -->
-            <h3>Skills</h3>
-            <ul>
-                <li>Ruby on Rails, PHP, Java, JavaScript, HTML, CSS.</li>
-                <li>Bilingual (English/Japanese) and bicultural.</li>
-            </ul>
-            <h3>Profiles on Other Sites</h3>
-            <ul>
-                <li><a href="http://tlsmooth89.com/" target="_blank">tlsmooth89.com</a></li>
-                <li><a href="https://www.linkedin.com/in/yiwasaki" target="_blank">LinkedIn</a></li>
-                <li><a href="https://www.wantedly.com/users/8063908" target="_blank">Wantedly</a></li>
-            </ul>
-            <h3>Works</h3>
-            <ul>
-                <li><a href="https://github.com/tlsmooth88" target="_blank">GitHub</a></li>
-            </ul>
-            <h3>SNS</h3>
-            <ul>
-                <li><a href="https://www.facebook.com/yiwasakiuie" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com/yiwasakiuie" target="_blank">Twitter</a></li>
-                <li><a href="https://www.youtube.com/tlsmooth89" target="_blank">YouTube</a></li>
-            </ul>
-        </section>
-        <footer>
-            <p>&copy; 2016 Yusuke Iwasaki</p>
-        </footer>
+        <h4>Web Apps</h4>
+        <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+        <!--
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>What it is</th>
+            </tr>
+        </thead>
+        -->
+        <tbody>
+            <tr>
+                <td><a href="http://tlsmooth88-ourbnb.herokuapp.com/" target="_blank"><b>Ourbnb</b></a></td>
+                <td>Internal BnB for and by employees of international organizations.</td>
+                <td>2016</td>
+            <tr>
+                <td><a href="http://simple-tweets.herokuapp.com/" target="_blank"><b>Simple Tweets</b></a></td>
+                <td>Twitter-like micropost service for close frineds.</td>
+                <td>2016</td>
+        </tbody>
+        </table>
+        </div>
+        <h4><a href="https://itunes.apple.com/in/developer/tlsmooth89/id525960457" target="_blank">iOS Apps</a></h4>
+        <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+        <tbody>
+            <tr>
+                <td><a href="https://itunes.apple.com/in/app/butterfly-and-rings/id992041866?mt=8" target="_blank"><b>Butterfly and  Rings</b></a></td>
+                <td><img src="ButterflyAndRings.png" alt="" /></td>
+                <td>Game to have the butterfly fly and collect rings.<br>Powered by Unity.</td>
+                <td>2015</td>
+            <tr>
+                <td><a href="https://itunes.apple.com/in/app/mt.fuji-12/id525960454?mt=8" target="_blank"><b>Mt.Fuji 12</b></a></td>
+                <td><img src="MtFujiClock.png" alt="" /></td>
+                <td>Clock with a slide show of Mt. Fuji.</td>
+                <td>2012</td>
+        </tbody>
+        </table>
+        </div>
+        <h4><a href="https://play.google.com/store/apps/developer?id=Yusuke+Iwasaki" target="_blank">Android Apps</a></h4>
+        <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+        <tbody>
+            <tr>
+                <td><a href="https://play.google.com/store/apps/details?id=com.tlsmooth89.ButterflyAndRings" target="_blank"><b>Butterfly and  Rings</b></a></td>
+                <td><img src="ButterflyAndRings.png" alt="" /></td>
+                <td>Game to have the butterfly fly and collect rings.<br>Powered by Unity.</td>
+                <td>2015</td>
+            <tr>
+                <td><a href="https://play.google.com/store/apps/details?id=com.tlsmooth89.fujiclock2014" target="_blank"><b>Fuji Clock 2014</b></a></td>
+                <td><img src="MtFujiClock.png" alt="" /></td>
+                <td>Clock with a slide show of Mt. Fuji.</td>
+                <td>2014</td>
+        </tbody>
+        </table>
+        </div>
     </div>
+    <footer>
+        <div class="copyright">&copy; 2016 Yusuke Iwasaki</div>
+    </footer>
 </body>
 </html>
